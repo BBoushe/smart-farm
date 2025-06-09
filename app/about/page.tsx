@@ -1,12 +1,14 @@
 export default function AboutPage() {
     return (
-        <div className="container py-5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             {/* Hero Section */}
-            <section className="text-center mb-5">
-                <h1 className="display-4 fw-bold text-farming mb-4">About SmartFarm</h1>
-                <div className="row justify-content-center">
-                    <div className="col-lg-8">
-                        <p className="lead">
+            <section className="text-center mb-12">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" style={{ color: "#2d5016" }}>
+                    About SmartFarm
+                </h1>
+                <div className="flex justify-center">
+                    <div className="max-w-4xl">
+                        <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
                             Connecting farmers across Europe for equipment sharing, produce selling, and agricultural collaboration.
                         </p>
                     </div>
@@ -14,69 +16,62 @@ export default function AboutPage() {
             </section>
 
             {/* Mission & Vision */}
-            <section className="py-5 bg-farming-light rounded-3 mb-5">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6 mb-4 mb-lg-0">
-                            <h2 className="fw-bold text-farming mb-4">Our Mission</h2>
-                            <p>
+            <section className="py-12 rounded-xl mb-12" style={{ backgroundColor: "#f5f5dc" }}>
+                <div className="px-6">
+                    <div className="flex flex-col lg:flex-row items-center gap-8">
+                        <div className="w-full lg:w-1/2">
+                            <h2 className="text-3xl font-bold mb-6" style={{ color: "#2d5016" }}>
+                                Our Mission
+                            </h2>
+                            <p className="text-gray-700 mb-4 leading-relaxed">
                                 SmartFarm was created to address the key challenges facing modern farmers: lack of quick information,
                                 high access costs, and limited national collaboration.
                             </p>
-                            <p>
+                            <p className="text-gray-700 mb-6 leading-relaxed">
                                 We believe that by connecting farmers through technology, we can create a more sustainable and
                                 profitable agricultural ecosystem that benefits everyone.
                             </p>
-                            <div className="d-flex align-items-center mt-4">
-                                <div className="me-4">
-                                    <div
-                                        className="d-flex align-items-center justify-content-center rounded-circle bg-white"
-                                        style={{ width: "60px", height: "60px" }}
-                                    >
-                                        <span style={{ fontSize: "2rem" }}>🌱</span>
+                            <div className="flex items-center">
+                                <div className="mr-4">
+                                    <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
+                                        <span className="text-3xl">🌱</span>
                                     </div>
                                 </div>
                                 <div>
-                                    <h5 className="text-farming mb-1">Sustainable Farming</h5>
-                                    <p className="mb-0 small">Supporting the EU's Sustainable Development Goals</p>
+                                    <h5 className="text-lg font-semibold mb-1" style={{ color: "#2d5016" }}>
+                                        Sustainable Farming
+                                    </h5>
+                                    <p className="text-sm text-gray-600">Supporting the EU's Sustainable Development Goals</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6">
-                            <div className="card card-farming border-0 shadow">
-                                <div className="card-body p-4">
-                                    <h3 className="text-farming mb-3">Our Vision</h3>
-                                    <p>
-                                        We envision a future where farmers can easily share resources, knowledge, and opportunities,
-                                        creating a more resilient and collaborative agricultural community.
-                                    </p>
-                                    <ul className="list-unstyled">
-                                        <li className="mb-2">
-                                            <div className="d-flex">
-                                                <div className="me-2">✅</div>
-                                                <div>Reduce equipment costs through sharing and rentals</div>
-                                            </div>
-                                        </li>
-                                        <li className="mb-2">
-                                            <div className="d-flex">
-                                                <div className="me-2">✅</div>
-                                                <div>Create new markets for surplus products</div>
-                                            </div>
-                                        </li>
-                                        <li className="mb-2">
-                                            <div className="d-flex">
-                                                <div className="me-2">✅</div>
-                                                <div>Provide instant access to agricultural expertise</div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="d-flex">
-                                                <div className="me-2">✅</div>
-                                                <div>Support young farmers with financial opportunities</div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div className="w-full lg:w-1/2">
+                            <div className="bg-white rounded-xl shadow-lg p-6 border" style={{ borderColor: "#8fbc8f" }}>
+                                <h3 className="text-2xl font-bold mb-4" style={{ color: "#2d5016" }}>
+                                    Our Vision
+                                </h3>
+                                <p className="text-gray-700 mb-6 leading-relaxed">
+                                    We envision a future where farmers can easily share resources, knowledge, and opportunities, creating
+                                    a more resilient and collaborative agricultural community.
+                                </p>
+                                <ul className="space-y-3">
+                                    <li className="flex items-start">
+                                        <span className="mr-3 text-green-600 font-bold">✅</span>
+                                        <span className="text-gray-700">Reduce equipment costs through sharing and rentals</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="mr-3 text-green-600 font-bold">✅</span>
+                                        <span className="text-gray-700">Create new markets for surplus products</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="mr-3 text-green-600 font-bold">✅</span>
+                                        <span className="text-gray-700">Provide instant access to agricultural expertise</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="mr-3 text-green-600 font-bold">✅</span>
+                                        <span className="text-gray-700">Support young farmers with financial opportunities</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -84,250 +79,135 @@ export default function AboutPage() {
             </section>
 
             {/* Key Features */}
-            <section className="py-5 mb-5">
-                <h2 className="text-center fw-bold text-farming mb-5">What Makes SmartFarm Different</h2>
-                <div className="row g-4">
-                    <div className="col-md-6 col-lg-3">
-                        <div className="card feature-card h-100 text-center p-4">
-                            <div style={{ fontSize: "3rem" }}>🚜</div>
-                            <h5 className="mt-3 text-farming">Equipment Marketplace</h5>
-                            <p className="text-muted small">
-                                Buy, sell, or rent agricultural equipment directly from other farmers, reducing costs and increasing
-                                equipment utilization.
-                            </p>
+            <section className="py-12 mb-12">
+                <h2 className="text-center text-3xl font-bold mb-12" style={{ color: "#2d5016" }}>
+                    What Makes SmartFarm Different
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {[
+                        {
+                            icon: "🚜",
+                            title: "Equipment Marketplace",
+                            desc: "Buy, sell, or rent agricultural equipment directly from other farmers, reducing costs and increasing equipment utilization.",
+                        },
+                        {
+                            icon: "🥕",
+                            title: "Product Exchange",
+                            desc: "Sell surplus produce, organic fertilizer, livestock feed, and other agricultural products at fair prices.",
+                        },
+                        {
+                            icon: "🔧",
+                            title: "Services Network",
+                            desc: "Offer specialized agricultural services to other farmers or find the expertise you need for your farm.",
+                        },
+                        {
+                            icon: "🤖",
+                            title: "AI Farm Assistant",
+                            desc: "Get instant answers to questions about equipment, farming techniques, plant diseases, and agricultural best practices.",
+                        },
+                    ].map((feature, i) => (
+                        <div
+                            key={i}
+                            className="bg-white rounded-xl shadow-lg text-center p-6 border transition-transform duration-200 hover:-translate-y-1 hover:shadow-xl"
+                            style={{ borderColor: "#8fbc8f" }}
+                        >
+                            <div className="text-5xl mb-4">{feature.icon}</div>
+                            <h5 className="text-xl font-semibold mb-3" style={{ color: "#2d5016" }}>
+                                {feature.title}
+                            </h5>
+                            <p className="text-gray-600 text-sm leading-relaxed">{feature.desc}</p>
                         </div>
-                    </div>
-
-                    <div className="col-md-6 col-lg-3">
-                        <div className="card feature-card h-100 text-center p-4">
-                            <div style={{ fontSize: "3rem" }}>🥕</div>
-                            <h5 className="mt-3 text-farming">Product Exchange</h5>
-                            <p className="text-muted small">
-                                Sell surplus produce, organic fertilizer, livestock feed, and other agricultural products at fair
-                                prices.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="col-md-6 col-lg-3">
-                        <div className="card feature-card h-100 text-center p-4">
-                            <div style={{ fontSize: "3rem" }}>🔧</div>
-                            <h5 className="mt-3 text-farming">Services Network</h5>
-                            <p className="text-muted small">
-                                Offer specialized agricultural services to other farmers or find the expertise you need for your farm.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="col-md-6 col-lg-3">
-                        <div className="card feature-card h-100 text-center p-4">
-                            <div style={{ fontSize: "3rem" }}>🤖</div>
-                            <h5 className="mt-3 text-farming">AI Farm Assistant</h5>
-                            <p className="text-muted small">
-                                Get instant answers to questions about equipment, farming techniques, plant diseases, and agricultural
-                                best practices.
-                            </p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </section>
 
             {/* Impact & Statistics */}
-            <section className="py-5 bg-farming-light rounded-3 mb-5">
-                <div className="container">
-                    <h2 className="text-center fw-bold text-farming mb-5">Our Impact</h2>
-                    <div className="row text-center">
-                        <div className="col-md-4 mb-4 mb-md-0">
-                            <div className="card h-100 border-0 shadow">
-                                <div className="card-body p-4">
-                                    <div style={{ fontSize: "2.5rem" }} className="mb-2">
-                                        🧑‍🌾
-                                    </div>
-                                    <h3 className="text-farming">500+</h3>
-                                    <p className="text-muted">Farmers Connected</p>
-                                </div>
+            <section className="py-12 rounded-xl mb-12" style={{ backgroundColor: "#f5f5dc" }}>
+                <div className="px-6">
+                    <h2 className="text-center text-3xl font-bold mb-12" style={{ color: "#2d5016" }}>
+                        Our Impact
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                        {[
+                            { icon: "🧑‍🌾", value: "500+", label: "Farmers Connected" },
+                            { icon: "💰", value: "€120,000+", label: "Equipment Costs Saved" },
+                            { icon: "🌍", value: "5+", label: "European Countries" },
+                        ].map((stat, i) => (
+                            <div key={i} className="bg-white rounded-xl shadow-lg p-8 border" style={{ borderColor: "#8fbc8f" }}>
+                                <div className="text-5xl mb-4">{stat.icon}</div>
+                                <h3 className="text-3xl font-bold mb-2" style={{ color: "#2d5016" }}>
+                                    {stat.value}
+                                </h3>
+                                <p className="text-gray-600 font-medium">{stat.label}</p>
                             </div>
-                        </div>
-                        <div className="col-md-4 mb-4 mb-md-0">
-                            <div className="card h-100 border-0 shadow">
-                                <div className="card-body p-4">
-                                    <div style={{ fontSize: "2.5rem" }} className="mb-2">
-                                        💰
-                                    </div>
-                                    <h3 className="text-farming">€120,000+</h3>
-                                    <p className="text-muted">Equipment Costs Saved</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="card h-100 border-0 shadow">
-                                <div className="card-body p-4">
-                                    <div style={{ fontSize: "2.5rem" }} className="mb-2">
-                                        🌍
-                                    </div>
-                                    <h3 className="text-farming">5+</h3>
-                                    <p className="text-muted">European Countries</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Team Section */}
-            <section className="py-5 mb-5">
-                <h2 className="text-center fw-bold text-farming mb-5">Meet Our Team</h2>
-                <div className="row g-4">
-                    <div className="col-md-6 col-lg-3">
-                        <div className="card h-100 text-center">
-                            <div className="p-3">
-                                <div
-                                    className="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
-                                    style={{ width: "120px", height: "120px" }}
-                                >
-                                    <span style={{ fontSize: "3rem" }}>👨‍🌾</span>
-                                </div>
-                                <h5 className="text-farming">Marko Petrović</h5>
-                                <p className="text-muted small">Founder & CEO</p>
-                                <p className="small">Former farmer with 15 years of experience in agricultural technology</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-3">
-                        <div className="card h-100 text-center">
-                            <div className="p-3">
-                                <div
-                                    className="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
-                                    style={{ width: "120px", height: "120px" }}
-                                >
-                                    <span style={{ fontSize: "3rem" }}>👩‍💻</span>
-                                </div>
-                                <h5 className="text-farming">Ana Jovanović</h5>
-                                <p className="text-muted small">CTO</p>
-                                <p className="small">Agricultural engineer with expertise in farm management systems</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-3">
-                        <div className="card h-100 text-center">
-                            <div className="p-3">
-                                <div
-                                    className="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
-                                    style={{ width: "120px", height: "120px" }}
-                                >
-                                    <span style={{ fontSize: "3rem" }}>👨‍💼</span>
-                                </div>
-                                <h5 className="text-farming">Milan Nikolić</h5>
-                                <p className="text-muted small">Head of Partnerships</p>
-                                <p className="small">10+ years experience in agricultural cooperatives and EU funding</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-3">
-                        <div className="card h-100 text-center">
-                            <div className="p-3">
-                                <div
-                                    className="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
-                                    style={{ width: "120px", height: "120px" }}
-                                >
-                                    <span style={{ fontSize: "3rem" }}>👩‍🔬</span>
-                                </div>
-                                <h5 className="text-farming">Jelena Đorđević</h5>
-                                <p className="text-muted small">Agricultural Specialist</p>
-                                <p className="small">PhD in Agricultural Sciences with focus on sustainable farming practices</p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </section>
 
             {/* Banking Partnership */}
-            <section className="py-5 bg-farming-light rounded-3 mb-5">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6 mb-4 mb-lg-0">
-                            <h2 className="fw-bold text-farming mb-4">Banking Partnership</h2>
-                            <p>
+            <section className="py-12 rounded-xl mb-12" style={{ backgroundColor: "#f5f5dc" }}>
+                <div className="px-6">
+                    <div className="flex flex-col lg:flex-row items-center gap-8">
+                        <div className="w-full lg:w-1/2">
+                            <h2 className="text-3xl font-bold mb-6" style={{ color: "#2d5016" }}>
+                                Banking Partnership
+                            </h2>
+                            <p className="text-gray-700 mb-4 leading-relaxed">
                                 SmartFarm partners with leading agricultural banks to provide farmers with tailored financial products
                                 based on their platform activity.
                             </p>
-                            <p>
+                            <p className="text-gray-700 mb-6 leading-relaxed">
                                 Through our analytics tools, banks can offer targeted loans and financial products to farmers based on
                                 their equipment usage patterns, purchase history, and farming activities.
                             </p>
-                            <div className="alert alert-success mt-4">
-                                <div className="d-flex">
-                                    <div className="me-3">
-                                        <span style={{ fontSize: "1.5rem" }}>💡</span>
-                                    </div>
-                                    <div>
-                                        <strong>Example:</strong> If our system detects you frequently rent a tractor, our banking partners
-                                        can offer you a favorable loan to purchase your own equipment.
-                                    </div>
+                            <div className="p-4 rounded-lg flex items-start" style={{ backgroundColor: "#e8f5e8" }}>
+                                <span className="mr-3 text-2xl">💡</span>
+                                <div className="text-gray-700">
+                                    <strong>Example:</strong> If our system detects you frequently rent a tractor, our banking partners
+                                    can offer you a favorable loan to purchase your own equipment.
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6">
-                            <div className="card card-farming border-0 shadow">
-                                <div className="card-body p-4">
-                                    <h3 className="text-farming mb-3">Financial Benefits</h3>
-                                    <ul className="list-unstyled">
-                                        <li className="mb-3">
-                                            <div className="d-flex">
-                                                <div className="me-3">
-                                                    <div
-                                                        className="rounded-circle bg-success d-flex align-items-center justify-content-center"
-                                                        style={{ width: "40px", height: "40px" }}
-                                                    >
-                                                        <span className="text-white">1</span>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <h5 className="text-farming">Personalized Loans</h5>
-                                                    <p className="small text-muted">
-                                                        Receive loan offers tailored to your specific farming needs and usage patterns
-                                                    </p>
-                                                </div>
+                        <div className="w-full lg:w-1/2">
+                            <div className="bg-white rounded-xl shadow-lg p-6 border" style={{ borderColor: "#8fbc8f" }}>
+                                <h3 className="text-2xl font-bold mb-6" style={{ color: "#2d5016" }}>
+                                    Financial Benefits
+                                </h3>
+                                <ul className="space-y-6">
+                                    {[
+                                        {
+                                            num: "1",
+                                            title: "Personalized Loans",
+                                            desc: "Receive loan offers tailored to your specific farming needs and usage patterns",
+                                        },
+                                        {
+                                            num: "2",
+                                            title: "Risk Analysis",
+                                            desc: "AI-powered risk assessment to help prevent poor investment decisions",
+                                        },
+                                        {
+                                            num: "3",
+                                            title: "Financial Consulting",
+                                            desc: "Access to personalized financial consultations to maximize your farm investments",
+                                        },
+                                    ].map((item, i) => (
+                                        <li key={i} className="flex items-start">
+                                            <div
+                                                className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-white mr-4 font-bold"
+                                                style={{ backgroundColor: "#2d5016" }}
+                                            >
+                                                {item.num}
+                                            </div>
+                                            <div>
+                                                <h5 className="text-lg font-semibold mb-1" style={{ color: "#2d5016" }}>
+                                                    {item.title}
+                                                </h5>
+                                                <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
                                             </div>
                                         </li>
-                                        <li className="mb-3">
-                                            <div className="d-flex">
-                                                <div className="me-3">
-                                                    <div
-                                                        className="rounded-circle bg-success d-flex align-items-center justify-content-center"
-                                                        style={{ width: "40px", height: "40px" }}
-                                                    >
-                                                        <span className="text-white">2</span>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <h5 className="text-farming">Risk Analysis</h5>
-                                                    <p className="small text-muted">
-                                                        AI-powered risk assessment to help prevent poor investment decisions
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="d-flex">
-                                                <div className="me-3">
-                                                    <div
-                                                        className="rounded-circle bg-success d-flex align-items-center justify-content-center"
-                                                        style={{ width: "40px", height: "40px" }}
-                                                    >
-                                                        <span className="text-white">3</span>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <h5 className="text-farming">Financial Consulting</h5>
-                                                    <p className="small text-muted">
-                                                        Access to personalized financial consultations to maximize your farm investments
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -335,16 +215,26 @@ export default function AboutPage() {
             </section>
 
             {/* Call to Action */}
-            <section className="text-center py-5">
-                <h2 className="fw-bold text-farming mb-4">Join the SmartFarm Community</h2>
-                <p className="lead mb-4">
+            <section className="text-center py-12">
+                <h2 className="text-3xl font-bold mb-6" style={{ color: "#2d5016" }}>
+                    Join the SmartFarm Community
+                </h2>
+                <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
                     Be part of the agricultural revolution that's helping farmers across Europe collaborate and thrive
                 </p>
-                <div className="d-flex justify-content-center gap-3">
-                    <a href="/register" className="btn btn-farming btn-lg">
+                <div className="flex flex-col sm:flex-row justify-center gap-4">
+                    <a
+                        href="/register"
+                        className="inline-block text-white font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-200 hover:opacity-90"
+                        style={{ backgroundColor: "#2d5016" }}
+                    >
                         Register Now
                     </a>
-                    <a href="/contact" className="btn btn-outline-success btn-lg">
+                    <a
+                        href="/contact"
+                        className="inline-block border-2 font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-200 hover:bg-opacity-10"
+                        style={{ borderColor: "#2d5016", color: "#2d5016" }}
+                    >
                         Contact Us
                     </a>
                 </div>
